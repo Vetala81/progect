@@ -82,6 +82,6 @@ console.log(--decr);
 
 
 const isCheked = false,
-      isClose = false;
+      isClose = false ;
       
 console.log(isCheked || !isClose);      
