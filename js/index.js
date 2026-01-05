@@ -70,7 +70,7 @@ const user = 'Vet' ;
 
 alert(`Hello ${user}`);
 */
-
+/*
 let incr = 10,
     decr = 10;
 
@@ -84,4 +84,70 @@ console.log(--decr);
 const isCheked = false,
       isClose = false ;
       
-console.log(isCheked || !isClose);      
+console.log(isCheked || !isClose);  
+*/
+/*
+let num = 50;
+/*
+while (num < 55) {
+    console.log(num);
+    num++;
+};
+*/
+/*
+for ( let i = 1; i < 8; i++ ) {
+    
+    if (i === 6) {
+       // break;
+       continue;
+    }
+    console.log(i);
+    
+}
+    */
+/*
+for (let i = 0; i < 3; i++){
+    console.log(i);
+    for (let j = 0; j < 3; j++){
+    console.log(j);
+    }
+}
+*/
+
+/*
+let result = '';
+const lenght = 10;
+
+for (let i = 1; i < lenght; i++) {
+
+    for (let j = 0; j < i; j++ ){
+        result += '*';
+    }
+    result += '\n';
+}
+
+console.log(result);
+
+*/
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMuvieDB = {
+    count: numberOfFilms,
+    muvies: {},
+    actors: {},
+    genres: [],
+    privat:false,
+};
+
+
+
+const a = prompt('Один из последних фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+personalMuvieDB.muvies[a] = b;
+personalMuvieDB.muvies[c] = d;
+
+console.log(personalMuvieDB);
